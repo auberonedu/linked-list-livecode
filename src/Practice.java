@@ -5,8 +5,12 @@ public class Practice {
         Node anything = new Node('V', anotherNode);
         Node something = new Node('Q', anything);
 
-        Node curent = something;
-
-        System.out.println(anotherNode.next.data);
+        Node current = something;
+        
+        while(current!=null){
+          System.out.println(current.data);
+          current = current.next;
+        }   
+        
     }
 }
